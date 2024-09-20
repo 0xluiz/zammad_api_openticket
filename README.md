@@ -78,8 +78,8 @@ Before running the script, ensure the `config.json` file is properly set up with
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/zammad-ticket-automation.git
-   cd zammad-ticket-automation
+   git clone https://github.com/0xluiz/zammad_api_openticket.git
+   cd zammad_api_openticket
    ```
 
 2. Edit the `config.json` file with your settings.
