@@ -26,7 +26,7 @@ This repository contains a Python script that automates the creation of Zammad t
 Install the required libraries with:
 
 ```bash
-pip install requests
+pip install requests shutil zipfile base64 json logging
 ```
 
 ## Configuration
@@ -67,7 +67,10 @@ Before running the script, ensure the `config.json` file is properly set up with
 - `temp_unzip_folder`: The temporary folder used for unzipping files.
 - `group`: The group in Zammad to assign the tickets to.
 - `customer_id`: The default customer ID (used if no client information is found).
-- `customertype`: The type of customer for the ticket.
+- `customertype`: **Note: This is a custom field** in Zammad, used to categorize the customer type.
+- `main_contact`: **Note: This is a custom field** in Zammad used to identify the main contact of an organization.
+
+> **Important**: The fields `customertype` and `main_contact` are custom parameters in Zammad. Make sure they are defined in your Zammad instance, or adjust the script accordingly.
 
 ## How to Run
 
@@ -97,3 +100,7 @@ The script expects files to have a format like:
 ```
 
 The script will unzip `report.zip`, create a Zammad ticket titled `[ClientName] {date} Relatorios`, and attach the unzipped files.
+
+## License
+
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
