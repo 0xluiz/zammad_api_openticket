@@ -20,4 +20,3 @@
     "body_template": "Seguem relatórios em anexo para {client_name}:\n\n{files_list}.\n\n"
   }
 }
-
