@@ -1,0 +1,23 @@
+{
+  "api_config": {
+    "zammad_api_url": "https://your_zammad_url_here/api/v1",
+    "api_token": "your_api_token_here",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "folder_paths": {
+    "source_folder": "/path/to/your/source/folder",
+    "processed_folder": "/path/to/your/processed/folder",
+    "temp_unzip_folder": "/path/to/your/temp/unzip/folder"
+  },
+  "ticket_settings": {
+    "group": "Your Group Here",
+    "customer_id": "Your Customer ID Here",
+    "customertype": "Your Customertype Here",
+    "title_template": "[{client_name}] {date} Relatorios",
+    "subject_template": "[{client_name}] {date} Relatorios",
+    "body_template": "Seguem relatórios em anexo para {client_name}:\n\n{files_list}.\n\n"
+  }
+}
+
