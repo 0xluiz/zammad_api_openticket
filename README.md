@@ -1,7 +1,3 @@
-Here is a basic `README.md` template for your GitHub project:
-
----
-
 # Zammad Ticket Automation Script
 
 This repository contains a Python script that automates the creation of Zammad tickets based on files found in a specific directory. The script extracts client information from filenames, unzips the files, creates a ticket in Zammad, and attaches the unzipped files. An internal note is also added to each ticket, logging that it was created programmatically.
